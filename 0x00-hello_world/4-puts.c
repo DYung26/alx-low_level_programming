@@ -5,7 +5,7 @@
  * Return: It prints a message to the standard output and returns 0,
  * indicating successful execution.
  */
-void main(void)
+int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
