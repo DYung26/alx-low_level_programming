@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE=input.c | gcc -E input.c -o c.i
+gcc -E main.c -o c.i
