@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	const char *hexadecimal = "0123456789abcde";
+	const char *hexadecimal = "0123456789abcdef";
 
 	int i = 0;
 
