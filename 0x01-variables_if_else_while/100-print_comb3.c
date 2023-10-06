@@ -2,10 +2,10 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints all possible combinations of two single-digit
- *              numbers in ascending order, separated by commas and spaces. Each
- *              combination is followed by a newline character, except for the
- *              last one.
+ * Description: This program prints all possible combinations of two
+ * single-digit numbers in ascending order, separated by commas and spaces.
+ * Each combination is followed by a newline character, except for the
+ * last one.
  *
  * Return: Always returns 0 to indicate successful completion.
  */
