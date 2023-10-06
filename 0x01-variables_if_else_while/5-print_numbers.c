@@ -11,6 +11,6 @@ int main(void)
 {
 	const char *str = "0123456789";
 
-	printf("%s", str);
+	printf("%s\n", str);
 	return (0);
 }
