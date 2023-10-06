@@ -20,17 +20,22 @@ int main(void)
 			{
 				for (d4 = 0; d4 < 10; d4++)
 				{
-					putchar(d1 + '0');
-					putchar(d2 + '0');
-					putchar(' ');
-					putchar(d3 + '0');
-					putchar(d4 + '0');
-					if (d1 == 9 && d2 == 8 && d3 == 9 && d4 == 9)
-					putchar('\n');
+					if (d4 == 0)
+					;
 					else
 					{
-						putchar(',');
+						putchar(d1 + '0');
+						putchar(d2 + '0');
 						putchar(' ');
+						putchar(d3 + '0');
+						putchar(d4 + '0');
+						if (d1 == 9 && d2 == 8 && d3 == 9 && d4 == 9)
+						putchar('\n');
+						else
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
