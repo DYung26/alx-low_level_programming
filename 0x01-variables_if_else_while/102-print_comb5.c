@@ -20,7 +20,7 @@ int main(void)
 			{
 				for (d4 = 0; d4 < 10; d4++)
 				{
-					if (d4 == 0)
+					if (d1 == 0 && d2 == 0 && d3 == 0 && d4 == 0)
 					;
 					else
 					{
