@@ -30,8 +30,10 @@ int main(void)
 						putchar(d3 + '0');
 						putchar(d4 + '0');
 						if (d1 == 9 && d2 == 8 && d3 == 9 && d4 == 9)
-						putchar('\n');
-						break;
+						{
+							putchar('\n');
+							break;
+						}
 						else
 						{
 							putchar(',');
