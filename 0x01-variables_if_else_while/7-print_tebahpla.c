@@ -10,11 +10,14 @@
 int main(void)
 {
 	const char *alphbtrev = "zyxwvutsrqponmlkjihgfedcba";
+
 	int i = 0;
+
 	while (alphbtrev[i] != 0)
 	{
 		putchar(alphbtrev[i]);
-		putchar('\n')
 		i++;
 	}
+	putchar('\n');
+	return (0);
 }
