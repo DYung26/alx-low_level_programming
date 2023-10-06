@@ -1,48 +1,38 @@
 #include <stdio.h>
+
 /**
  * main - Entry point of the program
  *
- * Description: This program prints all possible combinations of three
- * single-digit numbers in ascending order, separated by commas and spaces.
- * Each combination is followed by a newline character, except for the last
- * one.
+ * Description: This program prints all possible combinations of two
+ * two-digit numbers with no repeating digits, separated by a comma
+ * and space.
+ *
  * Return: Always returns 0 to indicate successful completion.
  */
 int main(void)
 {
-	int d1, d2, d3, d4;
+	int num1, num2;
 
-	for (d1 = 0; d1 < 10; d1++)
+	for (num1 = 0; num1 < 100; num1++)
 	{
-		for (d2 = 0; d2 < 10; d2++)
+		for (num2 = num1 + 1; num2 < 100; num2++)
 		{
-			for (d3 = 0; d3 < 10; d3++)
+			putchar(num1 / 10 + '0');
+			putchar(num1 % 10 + '0');
+			putchar(' ');
+			putchar(num2 / 10 + '0');
+			putchar(num2 % 10 + '0');
+
+			if (num1 == 98 && num2 == 99)
+				putchar('\n');
+			else
 			{
-				for (d4 = 0; d4 < 10; d4++)
-				{
-					if (d1 == 0 && d2 == 0 && d3 == 0 && d4 == 0)
-						continue;
-					else
-					{
-						putchar(d1 + '0');
-						putchar(d2 + '0');
-						putchar(' ');
-						putchar(d3 + '0');
-						putchar(d4 + '0');
-						if (d1 == 9 && d2 == 8 && d3 == 9 && d4 == 9)
-						{
-							putchar('\n');
-							break;
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
+
 	return (0);
 }
+
