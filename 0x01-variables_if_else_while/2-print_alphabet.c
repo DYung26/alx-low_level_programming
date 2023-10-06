@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	const char *str = "abcdefghijklmnopqrstuwxyz";
+	const char *str = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
 
 	while (str[i] != '\0')
