@@ -1,7 +1,9 @@
 #include <stdio.h>
 void print_alphabet_x10(void)
 {
-	for (int i = 0; i < 5; i++)
+	int i = 0;
+	
+	while (i < 5)
 	{
 		const char *alphbtx10 = "abcdefghijklmnopqrstuvwxyz";
 		int a = 0;
@@ -12,5 +14,6 @@ void print_alphabet_x10(void)
 			a++;
 		}
 		putchar('\n');
+		i++;
 	}
 }
