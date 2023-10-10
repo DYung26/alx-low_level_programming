@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "1-main.c"
+#include "main.h"
 void print_alphabet(void)
 {
 	const char *alphbtlwrcs = "abcdefghijklmnopqrstuvwxyz";
