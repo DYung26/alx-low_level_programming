@@ -1,5 +1,4 @@
 #include <stdio.h>
-/*#include "main.h"*/
 /**
  * main - Entry point of the program
  * Description: This program prints the characters of the string "_putchar"
