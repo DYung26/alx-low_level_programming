@@ -1,4 +1,5 @@
-#include <stdio.h>
+/*#include <stdio.h>*/
+#include "main.h"
 /**
  * jack_bauer - prints all possible times in a 24-hour clock format
  */
