@@ -3,7 +3,7 @@
 #include <locale.h>
 int _islower(int c)
 {
-	charc = (char)(c);
+	chrc = (char)(c);
 	setlocale(LC_ALL, "");
-	return islower(charc);
+	return islower(chrc);
 }
