@@ -2,7 +2,8 @@
 #include <ctype.h>
 int _islower(int c)
 {
-	int result = islower(c);
+	char charc = (char)c;
+	int result = islower(charc);
 
 	return result;
 }
