@@ -15,6 +15,7 @@ int main(void)
 	while (k + j < 4000000)
 	{
 		long next = k + j;
+
 		if (next % 2 == 0)
 		{
 			sum += next;
