@@ -8,7 +8,6 @@
  */
 int main(void)
 {
-	/*int i = 0;*/
 	long j = 1;
 	long k = 2;
 	long sum = 2;
@@ -19,8 +18,6 @@ int main(void)
 		if (next % 2 == 0)
 		{
 			sum += next;
-			/*j = k - j;
-			++i;*/
 		}
 		j = k;
 		k = next;
