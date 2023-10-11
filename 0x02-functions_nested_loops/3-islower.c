@@ -2,11 +2,11 @@
 #include <ctype.h>
 int _islower(int c)
 {
-	if (islower(c))
-	{
-	}
+	int result = islower(c);
+
+	if (result == 1)
+		return (result);
 	else
-	{
-	}
+		return (result);
 	return (0);
 }
