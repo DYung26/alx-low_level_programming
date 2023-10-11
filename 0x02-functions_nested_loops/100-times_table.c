@@ -1,11 +1,15 @@
 #include "main.h"
+/**
+ * print_times_table - prints the times table up to n
+ * @n: the maximum value for the times table
+ */
 void print_times_table(int n)
 {
 	int num, mult, prod;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (num = 0; num <= n; n++)
+		for (num = 0; num <= n; num++)
 		{
 			_putchar('0');
 			for (mult = 1; mult <= n; mult++)
