@@ -16,21 +16,21 @@ void times_table(void)
 				u = z % 10;
 				d = (z - u) / 10;
 				putchar(44);
-				_putchar(32);
-				_putchar(d + '0');
-				_putchar(u + '0');
+				putchar(32);
+				putchar(d + '0');
+				putchar(u + '0');
 			}
 			else
 			{
 				if (y != 0)
 				{
-					_putchar(44);
-					_putchar(32);
-					_putchar(32);
+					putchar(44);
+					putchar(32);
+					putchar(32);
 				}
-				_putchar(z + '0');
+				putchar(z + '0');
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
