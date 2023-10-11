@@ -8,4 +8,5 @@ int _islower(int c)
 		return (result);
 	else
 		return (result);
+	return result;
 }
