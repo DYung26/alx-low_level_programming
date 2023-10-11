@@ -7,12 +7,12 @@
  */
 int print_sign(int a)
 {
-	if (n > 0)
+	if (a > 0)
 	{
 		_putchar(43);
 		return (1);
 	}
-	else if (n > 0)
+	else if (a > 0)
 	{
 		_putchar(45);
 		return(-1);
