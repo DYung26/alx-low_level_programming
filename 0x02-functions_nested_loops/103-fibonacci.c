@@ -1,5 +1,4 @@
-/*#include <stdio.h>*/
-#include "main.h"
+#include <stdio.h>
 /**
  * main - Entry point
  * Description: Calculates the sum of even Fibonacci numbers
