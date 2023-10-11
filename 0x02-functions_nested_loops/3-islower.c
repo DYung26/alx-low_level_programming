@@ -4,6 +4,6 @@
 int _islower(int c)
 {
 	char chrc = (char)(c);
-	setlocale(LC_ALL, "");
+	setlocale(LC_ALL, "en_US.UTF-8");
 	return islower(chrc);
 }
