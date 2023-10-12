@@ -27,8 +27,10 @@ void addStrings(char result[], char num1[], char num2[])
 		result[k++] = sum % 10 + '0';
 		carry = sum / 10;
 
-		if (i >= 0) i--;
-		if (j >= 0) j--;
+		if (i >= 0)
+			i--;
+		if (j >= 0)
+			j--;
 	}
 
 	result[k] = '\0';
