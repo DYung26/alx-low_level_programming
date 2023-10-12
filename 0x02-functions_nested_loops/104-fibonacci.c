@@ -44,6 +44,7 @@ int main(void)
 	strcpy(fib[1], "2");
 
 	int  i;
+
 	for (i = 2; i < 98; i++)
 	{
 		addStrings(fib[i], fib[i - 1], fib[i - 2]);
