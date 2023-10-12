@@ -37,6 +37,11 @@ void addStrings(char result[], char num1[], char num2[])
 	reverseString(result);
 }
 
+/**
+ * Function to reverse a string.
+ * Parameter:
+ * - str: the string to be reversed.
+ */
 void reverseString(char str[])
 {
 	int length = strlen(str);
@@ -51,6 +56,12 @@ void reverseString(char str[])
 	}
 }
 
+/**
+ * main - Store Fibonacci numbers as strings.
+ * Initialize the first Fibonacci number.
+ * Initialize the second Fibonacci number.
+ * Return: Return 0 to indicate successful program execution.
+ */
 int main(void)
 {
 	int i;
