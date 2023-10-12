@@ -43,12 +43,14 @@ int main(void)
 	strcpy(fib[0], "1");
 	strcpy(fib[1], "2");
 
-	for (int i = 2; i < 98; i++)
+	int  i;
+	for (i = 2; i < 98; i++)
 	{
 		addStrings(fib[i], fib[i - 1], fib[i - 2]);
 	}
 
-	for (int i = 0; i < 97; i++)
+	int i;
+	for (i = 0; i < 97; i++)
 	{
 		printf("%s, ", fib[i]);
 	}
