@@ -42,9 +42,9 @@ void addStrings(char result[], char num1[], char num2[])
 /**
  * reverseString - Function to reverse a string.
  * Parameter:
- * str: the string to be reversed.
+ (* @str: the string to be reversed.
+ (* 
  */
-/* str: Get the length of the string.*/
 void reverseString(char str[])
 {
 	int length = strlen(str);
