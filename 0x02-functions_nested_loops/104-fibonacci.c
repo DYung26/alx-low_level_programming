@@ -6,6 +6,7 @@
  * - result: an array to store the result of the addition
  * - num1: the first number as a string
  * - num2: the second number as a string
+ * - str: Get the length of the string.
  */
 void reverseString(char str[]);
 
@@ -38,7 +39,7 @@ void addStrings(char result[], char num1[], char num2[])
 }
 
 /**
- * Function to reverse a string.
+ * reverseString - Function to reverse a string.
  * Parameter:
  * - str: the string to be reversed.
  */
