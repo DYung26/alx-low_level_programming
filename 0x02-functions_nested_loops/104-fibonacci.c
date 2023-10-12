@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-/* addStrings - Function to add two strings representing numbers
+/**
+ * addStrings - Function to add two strings representing numbers
  * Return:
  * - result: an array to store the result of the addition
  * - num1: the first number as a string
@@ -17,12 +18,15 @@ void addStrings(char result[], char num1[], char num2[])
 	int j = len2 - 1;
 	int k = 0;
 
-	while (i >= 0 || j >= 0 || carry > 0) {
+	while (i >= 0 || j >= 0 || carry > 0)
+	{
 		int x = (i >= 0) ? num1[i] - '0' : 0;
 		int y = (j >= 0) ? num2[j] - '0' : 0;
 		int sum = x + y + carry;
+
 		result[k++] = sum % 10 + '0';
 		carry = sum / 10;
+
 		if (i >= 0) i--;
 		if (j >= 0) j--;
 	}
@@ -49,6 +53,7 @@ int main(void)
 {
 	int i;
 	char fib[100][100];
+
 	strcpy(fib[0], "1");
 	strcpy(fib[1], "2");
 
@@ -62,5 +67,5 @@ int main(void)
 		printf("%s, ", fib[i]);
 	}
 	printf("%s\n", fib[97]);
-	return 0;
+	return (0);
 }
