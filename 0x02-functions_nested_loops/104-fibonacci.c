@@ -49,7 +49,6 @@ int main(void)
 		addStrings(fib[i], fib[i - 1], fib[i - 2]);
 	}
 
-	int i;
 	for (i = 0; i < 97; i++)
 	{
 		printf("%s, ", fib[i]);
