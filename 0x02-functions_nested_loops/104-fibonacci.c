@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-
+/* addStrings - Function to add two strings representing numbers
+ * Return:
+ * - result: an array to store the result of the addition
+ * - num1: the first number as a string
+ * - num2: the second number as a string
+ */
 void reverseString(char str[]);
 
 void addStrings(char result[], char num1[], char num2[])
