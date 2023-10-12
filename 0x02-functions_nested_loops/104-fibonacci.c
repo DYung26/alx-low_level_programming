@@ -44,7 +44,8 @@ void addStrings(char result[], char num1[], char num2[])
  * Parameter:
  * str: the string to be reversed.
  */
-void reverseString(char str[]) /*str: Get the length of the string.*/
+/* str: Get the length of the string.*/
+void reverseString(char str[])
 {
 	int length = strlen(str);
 	int i, j;
