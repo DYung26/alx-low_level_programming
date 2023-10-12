@@ -8,7 +8,7 @@
  * - num2: the second number as a string
  * str: Get the length of the string.
  */
-void reverseString(char str[]);
+void reverseString(char str[]); /*str: Get the length of the string.*/
 
 void addStrings(char result[], char num1[], char num2[])
 {
@@ -43,7 +43,7 @@ void addStrings(char result[], char num1[], char num2[])
  * Parameter:
  * str: the string to be reversed.
  */
-void reverseString(char str[])
+void reverseString(char str[]) /*str: Get the length of the string.*/
 {
 	int length = strlen(str);
 	int i, j;
