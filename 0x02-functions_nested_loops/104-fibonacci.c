@@ -37,7 +37,8 @@ void reverseString(char str[]) {
 	}
 }
 
-int main() {
+int main(void)
+{
 	char fib[100][100];
 	strcpy(fib[0], "1");
 	strcpy(fib[1], "2");
