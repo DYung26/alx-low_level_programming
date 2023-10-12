@@ -8,14 +8,14 @@
 int main(void)
 {
 	int count;
-	unsigned int fib1 = 1, fib2 = 2;
+	unsigned long fib1 = 1, fib2 = 2;
 
-	printf("%d, %d", fib1, fib2);
+	printf("%lu, %lu", fib1, fib2);
 
 	for (count = 2; count < 98; count++)
 	{
-		unsigned int next = fib1 + fib2;
-		printf(", %d", next);
+		unsigned long next = fib1 + fib2;
+		printf(", %lu", next);
 		fib1 = fib2;
 		fib2 = next;
 	}
