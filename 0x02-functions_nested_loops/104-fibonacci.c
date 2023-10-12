@@ -39,11 +39,10 @@ void reverseString(char str[]) {
 
 int main(void)
 {
+	int i;
 	char fib[100][100];
 	strcpy(fib[0], "1");
 	strcpy(fib[1], "2");
-
-	int  i;
 
 	for (i = 2; i < 98; i++)
 	{
