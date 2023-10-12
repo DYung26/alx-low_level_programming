@@ -7,8 +7,8 @@
  * - num1: the first number as a string
  * - num2: the second number as a string
  * Description: str - Get the length of the string.
- * '@str' - str
  */
+/* '@str' - str */
 void reverseString(char str[]);
 
 void addStrings(char result[], char num1[], char num2[])
