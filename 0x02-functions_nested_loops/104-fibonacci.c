@@ -1,45 +1,58 @@
 #include <stdio.h>
+#include <string.h>
 /**
- * main - Entry point
- * Description: Calculates and prints the first 100 Fibonacci numbers.
- * If the Fibonacci numbers exceed 10 digits, they are split into halves.
- * Return: Always 0 (Success)
+ * addStrings - Function to add two strings representing numbers
+ * Return:
+ * - result: an array to store the result of the addition
+ * - num1: the first number as a string
+ * - num2: the second number as a string
  */
-int main(void)
-{
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
-	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
-	unsigned long half1, half2;
+void addStrings(char result[], char num1[], char num2[]) {
+	int carry = 0;
+	int len1 = strlen(num1);
+	int len2 = strlen(num2);
+	int i = len1 - 1;
+	int j = len2 - 1;
+	int k = 0;
 
-	for (count = 0; count < 91; count++)
-	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
-		fib1 = fib2;
-		fib2 = sum;
+	while (i >= 0 || j >= 0 || carry > 0) {
+		int x = (i >= 0) ? num1[i] - '0' : 0;
+		int y = (j >= 0) ? num2[j] - '0' : 0;
+		int sum = x + y + carry;
+		result[k++] = sum % 10 + '0';
+		carry = sum / 10;
+		if (i >= 0) i--;
+		if (j >= 0) j--;
 	}
-	fib1_half1 = fib1 / 10000000000;
-	fib2_half1 = fib2 / 10000000000;
-	fib1_half2 = fib1 % 10000000000;
-	fib2_half2 = fib2 % 10000000000;
-	for (count = 93; count < 99; count++)
-	{
-		half1 = fib1_half1 + fib2_half1;
-		half2 = fib1_half2 + fib2_half2;
-		if (half2 > 9999999999) /*(fib1_half2 + fib2_half2 > 9999999999)*/
-		{
-			half1 += 1;
-			half2 %= 10000000000;
-		}
-		printf("%lu%lu", half1, half2);
-		if (count != 98)
-			printf(", ");
-		fib1_half1 = fib2_half1;
-		fib1_half2 = fib2_half2;
-		fib2_half1 = half1;
-		fib2_half2 = half2;
+
+	result[k] = '\0';
+	reverseString(result);
+}
+
+void reverseString(char str[]) {
+	int length = strlen(str);
+	int i, j;
+	char temp;
+
+	for (i = 0, j = length - 1; i < j; i++, j--) {
+		temp = str[i];
+		str[i] = str[j];
+		str[j] = temp;
 	}
-	printf("\n");
-	return (0);
+}
+
+int main() {
+	char fib[100][100];
+	strcpy(fib[0], "1");
+	strcpy(fib[1], "2");
+
+	for (int i = 2; i < 98; i++) {
+		addStrings(fib[i], fib[i - 1], fib[i - 2]);
+	}
+
+	for (int i = 0; i < 97; i++) {
+		printf("%s, ", fib[i]);
+	}
+	printf("%s\n", fib[97]);
+	return 0;
 }
