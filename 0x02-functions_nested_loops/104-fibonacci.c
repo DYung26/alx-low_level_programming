@@ -3,7 +3,8 @@
 
 void reverseString(char str[]);
 
-void addStrings(char result[], char num1[], char num2[]) {
+void addStrings(char result[], char num1[], char num2[])
+{
 	int carry = 0;
 	int len1 = strlen(num1);
 	int len2 = strlen(num2);
@@ -25,12 +26,14 @@ void addStrings(char result[], char num1[], char num2[]) {
 	reverseString(result);
 }
 
-void reverseString(char str[]) {
+void reverseString(char str[])
+{
 	int length = strlen(str);
 	int i, j;
 	char temp;
 
-	for (i = 0, j = length - 1; i < j; i++, j--) {
+	for (i = 0, j = length - 1; i < j; i++, j--)
+	{
 		temp = str[i];
 		str[i] = str[j];
 		str[j] = temp;
