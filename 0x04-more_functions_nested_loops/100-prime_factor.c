@@ -1,28 +1,30 @@
 #include <stdio.h>
+
 /**
  * main - Entry point for the largest prime factor program
  * Description:
- * This program calculates and prints the 
- * largest prime factor of the number 612852475143.
+ * This program calculates and prints the largest prime factor
+ * of the number 612852475143.
  * Return: 0 (Success)
  */
 int main(void)
 {
-	long prime = 612852475143, divisor;
+	long long num = 612852475143;
+	long long factor = 2;
 
-	while (divisor < (prime / 2))
+	while (num > 1)
 	{
-		if ((prime % 2) == 0)
+		if (num % factor == 0)
 		{
-			prime /= 2;
-			continue;
+			num /= factor;
 		}
-		for (divisor = 3; divisor < (prime / 2); divisor += 2)
+		else
 		{
-			if ((prime % divisor) == 0)
-				prime /= divisor;
+			factor++;
 		}
 	}
-	printf("%ld\n", prime);
-	return (0);
+
+	printf("%lld\n", factor);
+	return 0;
 }
+
