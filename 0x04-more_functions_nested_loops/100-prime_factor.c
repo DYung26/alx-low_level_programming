@@ -10,19 +10,18 @@ int main(void)
 {
 	long prime = 612852475143, divisor = 2;
 
-	while (divisor < (prime / 2))
+	while (divisor <= prime)
 	{
-		if ((prime % 2) == 0)
+		if (prime % divisor == 0)
 		{
-			prime /=2;
+			prime /= divisor;
 			continue;
 		}
-		for (divisor = 3; divisor < (prime / 2); divisor += 2)
+		else
 		{
-			if ((prime % divisor) == 0)
-				prime /= divisor;
+			divisor++;
 		}
 	}
-	printf("%d\n", prime)
+	printf("%ld\n", prime)
 	return (0);
 }
