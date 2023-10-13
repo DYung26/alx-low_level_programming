@@ -8,18 +8,19 @@
  */
 int main(void)
 {
-	long prime = 612852475143;
-	long divisor = 2;
+	long prime = 612852475143, divisor = 2;
 
-	while (divisor <= prime)
+	while (divisor < (prime / 2))
 	{
-		if (prime % divisor == 0)
+		if ((prime % 2) == 0)
 		{
-			prime /= divisor;
+			prime /= 2;
+			continue;
 		}
-		else
+		for (divisor = 3; divisor < (prime / 2); divisor += 2)
 		{
-			divisor++;
+			if ((prime % divisor) == 0)
+				prime /= divisor;
 		}
 	}
 	printf("%ld\n", prime);
