@@ -27,4 +27,3 @@ int main(void)
 	printf("%lld\n", factor);
 	return 0;
 }
-
