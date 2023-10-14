@@ -2,7 +2,7 @@
 /**
  * main - Entry point for the largest prime factor program
  * Description:
- * This program calculates and prints the 
+ * This program calculates and prints the
  * largest prime factor of the number 612852475143.
  * Return: 0 (Success)
  */
