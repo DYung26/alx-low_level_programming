@@ -18,20 +18,25 @@ int main(void)
 		num /= 2;
 	}
 
-	long long limit = (long long)sqrt(num);
-	for (long long factor = 3; factor <= limit; factor += 2) {
-		while (num % factor == 0) {
+	long long limit = (long long)sqrt((double)num);
+	long long factor = 3;
+	while (factor <= limit)
+	{
+		while (num % factor == 0)
+		{
 			largestPrimeFactor = factor;
 			num /= factor;
-			limit = (long long)sqrt(num);
+			limit = (long long)sqrt((double)num);
 		}
+		factor += 2;
 	}
 
-	if (num > 1) {
+	if (num > 1)
+	{
 		largestPrimeFactor = num;
 	}
 
 	printf("%lld\n", largestPrimeFactor);
 
-	return 0;
+	return (0);
 }
