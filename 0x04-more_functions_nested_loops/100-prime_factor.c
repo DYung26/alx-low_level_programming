@@ -35,6 +35,6 @@ long main(void)
 		largestPrimeFactor = num;
 	}
 
-	printf("%lld\n", largestPrimeFactor);
+	printf("%ld\n", largestPrimeFactor);
 	return (0);
 }
