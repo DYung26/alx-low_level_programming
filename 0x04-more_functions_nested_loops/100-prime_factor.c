@@ -7,7 +7,7 @@
  * of the number 612852475143 using the math library to optimize.
  * Return: 0 (Success)
  */
-int main(void)
+long main(void)
 {
 	long num = 612852475143;
 	long largestPrimeFactor = -1;
