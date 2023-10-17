@@ -19,11 +19,11 @@ void puts2(char *str)
 		y++;
 		i++;
 	}
-	t = i - 1;
+	t = i;
 	for (o = 0; o < t; o++)
 	{
 		if (o % 2 == 0)
-			_putchar(str[0]);
+			_putchar(str[o]);
 	}
 	_putchar('\n');
 }
