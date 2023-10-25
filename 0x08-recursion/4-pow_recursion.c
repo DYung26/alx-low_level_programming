@@ -13,7 +13,8 @@
  * it calculates the power recursively by
  * multiplying 'x' by itself 'y' times.
  *
- * Return: The result of 'x' raised to the power of 'y' or -1 in case of an error.
+ * Return: The result of 'x' raised to the power of 'y' or -1
+ * in case of an error.
  */
 int _pow_recursion(int x, int y)
 {
