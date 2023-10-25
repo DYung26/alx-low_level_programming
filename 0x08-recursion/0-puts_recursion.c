@@ -4,7 +4,7 @@ void _puts_recursion(char *s)
 {
 	if (s == NULL)
 	{
-		_putchar('\n')
+		_putchar('\n');
 	}
 	if (*s == '\0')
 	{
