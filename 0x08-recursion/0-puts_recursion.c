@@ -2,7 +2,7 @@
 
 void _puts_recursion(char *s)
 {
-	if (s == NULL)
+	if (*s == NULL)
 	{
 		return;
 	}
