@@ -26,7 +26,24 @@ int palindrome(char *s, int i, int len)
 		return (0);
 	return (palindrome(s, i + 1, len));
 }
+/**
+ * _strlen_recursion - A function that returns the length of a string.
+ * @s: The input string.
+ *
+ * This function calculates the length of a string 's' using recursion.
+ * It counts the number of characters in the string
+ * until it reaches the null terminator ('\0').
+ *
+ * Return: The length of the string.
+ */
 int _strlen_recursion(char *s);
+{
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	return ((1) + _strlen_recursion(s + 1));
+}
 /**
  * is_palindrome - A function that checks if a string is a palindrome.
  * @s: The input string to check for palindrome.
