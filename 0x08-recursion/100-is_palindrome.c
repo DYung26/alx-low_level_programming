@@ -36,7 +36,7 @@ int palindrome(char *s, int i, int len)
  *
  * Return: The length of the string.
  */
-int _strlen_recursion(char *s);
+int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
 	{
