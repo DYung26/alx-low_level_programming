@@ -13,5 +13,5 @@ int rsqrt_recursion(int n, int i)
 		return (-1);
 	if (i * i == n)
 		return (n);
-	return (rsqrt_recursion(n, i + 1))
+	return (rsqrt_recursion(n, i + 1));
 }
