@@ -26,6 +26,7 @@ int palindrome(char *s, int i, int len)
 		return (0);
 	return (palindrome(s, i + 1, len));
 }
+int _strlen_recursion(char *s);
 /**
  * is_palindrome - A function that checks if a string is a palindrome.
  * @s: The input string to check for palindrome.
