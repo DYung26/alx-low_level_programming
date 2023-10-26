@@ -20,7 +20,7 @@ int ris_prime_number(int n, int i)
 		return (1);
 	if (n % i == 0)
 		return (0);
-	ris_prime_number(n, i - 1);
+	return (ris_prime_number(n, i - 1));
 }
 /**
  * is_prime_number - A function that checks if a number is prime.
