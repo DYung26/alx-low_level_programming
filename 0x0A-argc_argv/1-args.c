@@ -9,6 +9,5 @@ int main(int argc, char *argv[])
 			len++;
 		printf("%d\n", len);
 	}
-	printf("%d\n", argc);
 	return (0);
 }
