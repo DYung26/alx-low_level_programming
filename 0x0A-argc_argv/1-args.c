@@ -3,9 +3,10 @@ int main(int argc, char *argv[])
 {
 	if (argc > 0)
 	{
-		int len;
+		int len = 0;
 
-		len = sizeof(argv) / sizeof(argv[0]);
+		while (argv[len] != NULL)
+			len++;
 		printf("%d\n", len);
 	}
 	printf("%d\n", argc);
