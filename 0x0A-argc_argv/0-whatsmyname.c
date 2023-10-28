@@ -8,6 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[argc]);
+	if (argc < 1)
+	{
+		printf("%s\n", argv[argc]);
+	}
 	return (0);
 }
