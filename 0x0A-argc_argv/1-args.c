@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 	{
 		int len;
 
-		len = sizeof(argv) / sizeof(argv[0])
+		len = sizeof(argv) / sizeof(argv[0]);
 		printf("%d\n", len);
 	}
 	printf("%d\n", argc);
