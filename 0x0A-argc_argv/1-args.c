@@ -10,11 +10,11 @@ int main(int argc, char *argv[])
 {
 	if (argc > 0)
 	{
-		int len = 1;
+		int len = 0;
 
 		while (argv[len] != NULL)
 			len++;
-		printf("%d\n", len);
+		printf("%d\n", len - 1);
 	}
 	return (0);
 }
