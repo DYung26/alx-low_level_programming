@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	if (argc > 0)
 	{
-		int len = 0;
+		int len = 1;
 
 		while (argv[len] != NULL)
 			len++;
