@@ -8,5 +8,5 @@ void *malloc_checked(unsigned int b)
 
 	if (b == NULL)
 		return (98);
-	return (t);
+	return (*t);
 }
