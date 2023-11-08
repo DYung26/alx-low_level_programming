@@ -7,6 +7,4 @@
  * This function is used to print the name.
  */
 void print_name(char *name, void (*f)(char *))
-{
 	f(name);
-}
