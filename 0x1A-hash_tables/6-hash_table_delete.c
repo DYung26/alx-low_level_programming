@@ -2,7 +2,7 @@
 
 /**
  * free_list - frees a linked list
- * @head: hash_node_t list to be freed
+ * @head: hash_node_t list to be freed - malloc
  */
 void free_list(hash_node_t *head)
 {
