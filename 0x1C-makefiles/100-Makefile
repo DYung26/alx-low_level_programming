@@ -6,10 +6,16 @@ OBJ = $(SRC:%.c=%.o)
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+%.o: main.c
+    $(CC) $(MY_CFLAGS) -c $< -o $@
+
+%.o: school.c
+    $(CC) $(MY_CFLAGS) -c $< -o $@
+
 all: m.h ${NAME}
 
 ${NAME}: ${OBJ}
-	${CC} ${MY_CFLAGS} $< -o ${NAME}
+	${CC} ${MY_CFLAGS} $< -o $@
 
 clean:
 	${RM} .*.swp *~ ${NAME}
