@@ -1,4 +1,4 @@
-.PHONY: all ${NAME} m.h clean oclean fclean re
+.PHONY: all clean oclean fclean re
 
 CC = gcc
 SRC = main.c school.c
@@ -12,7 +12,7 @@ ${NAME}: ${OBJ}
 	${CC} $< -o $@
 
 clean:
-	${RM} .*.swp *~ ${NAME}
+	${RM} *~ ${NAME}
 
 oclean:
 	${RM} ${OBJ}
