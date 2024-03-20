@@ -9,7 +9,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: m.h ${NAME}
 
 ${NAME}: ${OBJ}
-	${CC} ${OBJ} -o $@
+	${CC} $^ -o $@
 
 clean:
 	${RM} .*.swp *~ ${NAME}
