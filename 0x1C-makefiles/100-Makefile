@@ -12,14 +12,14 @@ all: m.h
 m.h: ${NAME}
 
 ${NAME}:
-	${CC} -Wall -Werror -Wextra -pedantic main.o school.o -o ${NAME}
+	${CC} -Wall -Werror -Wextra -pedantic ${OBJ} -o ${NAME}
 
 clean:
 	${RM} .*.swp *~ ${NAME}
 
 oclean:
-	${RM} main.o school.o
+	${RM} ${OBJ}
 
 fclean: clean oclean
 
-re: fclean all
+re: oclean all
