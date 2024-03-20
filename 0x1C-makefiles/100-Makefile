@@ -1,4 +1,4 @@
-.PHONY: all ${NAME} clean oclean fclean re
+.PHONY: all clean oclean fclean re
 
 CC = gcc
 SRC = main.c school.c
@@ -7,9 +7,7 @@ NAME = school
 # RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: m.h
-
-m.h: ${NAME}
+all: m.h ${NAME}
 
 ${NAME}:
 	${CC} ${OBJ} -o ${NAME}
