@@ -34,9 +34,7 @@ def island_perimeter(grid):
                 left = grid[row][column-1] if column > 0 else 0
                 bottom = grid[row+1][column] if row < height - 1 else 0
                 right = grid[row][column+1] if column < width - 1 else 0
-                count += (top == 0) + (left == 0) + (bottom == 0) + (right == 0)
-                # for coefficients in [top, left, bottom, right]:
-                    # if coefficients == 0:
-                        # print(coefficients)
-                        # count += 1
+                for coefficients in [top, left, bottom, right]:
+                    if coefficients == 0:
+                        count += 1
     return count
