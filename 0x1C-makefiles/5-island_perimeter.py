@@ -27,7 +27,14 @@ def island_perimeter(grid):
     count = 0
     height = len(grid)
     width = len(grid[0])
-    for i in range(1, height-1):
-        for j in range(1, width-1):
-            count += 1
+    for row, i in enumerate(grid):
+        for column, j in enumerate(grid):
+            if grid[row][column] == 1:
+                top = grid[row-1][column]
+                left = grid[row][column-1]
+                bottom = grid[row+1][column]
+                right = grid[row][column+1]
+                for coefficients in [top, left, bottom, right]:
+                    if coefficients == 0:
+                        count += 1
     return count
