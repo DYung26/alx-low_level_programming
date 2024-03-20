@@ -1,9 +1,10 @@
-.PHONY = all school
+.PHONY: all school
 
 CC = gcc
 SRC := $(wildcard *.c)
+OBJ := $(SRC:.c=.o)
 
 all: school
 
-school: ${SRC}
+school: ${OBJ}
 	${CC} $^ -o $@
